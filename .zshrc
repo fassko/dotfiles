@@ -95,3 +95,4 @@ alias openxw='open *.xcworkspace'
 alias opendesktop='open ~/Desktop'
 
 alias simDevices="xcrun simctl list"
+alias pwdcopy="pwd | tr -d '\n' | pbcopy"
