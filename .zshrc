@@ -7,7 +7,8 @@ export ZSH=/Users/kristaps/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="jreese"
+ZSH_THEME="sobole"
+#jreese"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,11 +89,10 @@ export LC_ALL="en_US.UTF-8"
 alias qminder='cd ~/Documents/qminder/'
 
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export EDITOR="atom"
 
-# open aliases
-alias openx='open *.xcodeproj'
-alias openxw='open *.xcworkspace'
-alias opendesktop='open ~/Desktop'
+# Set up ENV variables
+source .zsh_env_variables
 
-alias simDevices="xcrun simctl list"
-alias pwdcopy="pwd | tr -d '\n' | pbcopy"
+# Aliases
+source ~/.aliases
