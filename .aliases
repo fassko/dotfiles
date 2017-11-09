@@ -102,3 +102,10 @@ alias fs="stat -f \"%z bytes\""
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+
+
+# Cocoapods
+alias pu="pod update"
+alias pi="pod install"
+
+alias rmsims="xcrun simctl delete unavailable"
