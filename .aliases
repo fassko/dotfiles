@@ -124,3 +124,7 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pas
 alias vb="vapor build"
 alias vr="vapor run"
 alias vbr="vapor build && vapor run"
+alias vu="vapor update"
+alias vl="vapor clean"
+alias vx="vapor xcode"
+alias vc="vapor cloud"
