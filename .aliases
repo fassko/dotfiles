@@ -109,3 +109,18 @@ alias pu="pod update"
 alias pi="pod install"
 
 alias rmsims="xcrun simctl delete unavailable"
+
+alias vim="mvim -v"
+
+alias emulator="~/Library/Android/sdk/emulator/emulator -avd Pixel_API_27"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Copy public key to clipboard:
+alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+#Vapor CLI
+alias vb="vapor build"
+alias vr="vapor run"
+alias vbr="vapor build && vapor run"

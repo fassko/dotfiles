@@ -3,11 +3,14 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/kristaps/.oh-my-zsh
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# ZSH_THEME="amuse"
 ZSH_THEME="sobole"
+# ZSH_THEME="dracula"
+SOBOLE_THEME_MODE=dark
+SOBOLE_DEFAULT_USER=kristaps
 #jreese"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -52,7 +55,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn virtualenv z osx adb vagrant npm gem xcode)
+plugins=(git svn virtualenv z osx adb vagrant npm gem xcode zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,5 +97,14 @@ export EDITOR="atom"
 # Set up ENV variables
 source .zsh_env_variables
 
+## Starts recording the simulator.
+recsim() {
+    xcrun simctl io booted recordVideo "$1"
+}
+
 # Aliases
 source ~/.aliases
+
+source ~/antigen.zsh
+
+#antigen bundle zsh-users/zsh-syntax-highlighting
