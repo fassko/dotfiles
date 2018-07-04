@@ -5,6 +5,7 @@ alias opendesktop='open ~/Desktop'
 
 alias simDevices="xcrun simctl list"
 alias pwdcopy="pwd | tr -d '\n' | pbcopy"
+alias rmsim="xcrun simctl delete unavailable"
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
