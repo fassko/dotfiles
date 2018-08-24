@@ -13,6 +13,10 @@ SOBOLE_THEME_MODE=dark
 SOBOLE_DEFAULT_USER=kristaps
 #jreese"
 
+DEFAULT_USER="kristaps"
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_ITERM2="true"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -55,7 +59,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn virtualenv z osx adb vagrant npm gem xcode zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git svn virtualenv z osx adb vagrant npm gem xcode fastlane pod xcversion docker
+github brew   zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +113,6 @@ source ~/.aliases
 source ~/antigen.zsh
 
 #antigen bundle zsh-users/zsh-syntax-highlighting
+
+
+#export JAVA_HOME=$(/usr/libexec/java_home)
