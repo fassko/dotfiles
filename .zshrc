@@ -112,7 +112,7 @@ source ~/.aliases
 
 source ~/antigen.zsh
 
-#antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 #export JAVA_HOME=$(/usr/libexec/java_home)

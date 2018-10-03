@@ -131,4 +131,8 @@ alias vx="vapor xcode"
 alias vc="vapor cloud"
 
 alias select-xcode="sudo xcode-select --switch /Applications/Xcode.app"
-alias select-xcode-beta="sudo xcode-select --switch /Applications/Xcode-beta.app"
+alias seliiect-xcode-beta="sudo xcode-select --switch /Applications/Xcode-beta.app"
+
+alias cu='carthage update'
+
+alias ao='atom .'
