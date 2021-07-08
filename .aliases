@@ -60,8 +60,6 @@ alias la="ls -l | awk '
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-
-
 # `cat` with beautiful colors. requires Pygments installed.
 # 							   sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
@@ -172,3 +170,8 @@ function restart-touch-bar {
     sudo killall "ControlStrip";
 }
 alias retouch="restart-touch-bar"
+
+
+#Sharentic
+
+alias sharentic="cd ~/Documents/sharentic/"
