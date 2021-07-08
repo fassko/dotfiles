@@ -1,13 +1,44 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# source ~/antigen.zsh
+# antigen use oh-my-zsh
+
+#: antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+
+# antigen apply
+
+source /usr/local/share/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+# antigen bundle git
+# antigen bundle heroku
+# antigen bundle pip
+# antigen bundle lein
+# antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+# antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+# antigen theme robbyrussell
+
+# Tell Antigen that you're done.
+antigen apply
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/kristaps/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="amuse"
-ZSH_THEME="sobole"
+# ZSH_THEME="sobole"
+ZSH_THEME="spaceship"
 # ZSH_THEME="dracula"
 SOBOLE_THEME_MODE=dark
 SOBOLE_DEFAULT_USER=kristaps
@@ -59,8 +90,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn virtualenv z osx adb vagrant npm gem xcode fastlane pod xcversion docker
-github brew   zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git svn virtualenv z osx adb vagrant npm gem xcode pod docker
+brew zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,8 +125,6 @@ export LC_ALL="en_US.UTF-8"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias qminder='cd ~/Documents/qminder/'
-
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export EDITOR="atom"
 
@@ -110,9 +139,9 @@ recsim() {
 # Aliases
 source ~/.aliases
 
-source ~/antigen.zsh
+. `brew --prefix`/etc/profile.d/z.sh
 
-# antigen bundle zsh-users/zsh-syntax-highlighting
-
-
-#export JAVA_HOME=$(/usr/libexec/java_home)
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
+  
